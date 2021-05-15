@@ -15,7 +15,7 @@
 }
 
 .main__header {
-  font-family: "MullerMedium";
+  font-family: "MullerMedium", "Arial", sans-serif;
   font-size: 64px;
   line-height: 64px;
   letter-spacing: -0.5px;
@@ -64,7 +64,7 @@
 .main__videobutton {
   width: 254px;
   height: 254px;
-  background-color:inherit;
+  background-color: inherit;
   border-radius: 50%;
   top: 30%;
   display: flex;
@@ -76,11 +76,11 @@
 .main__videosvg:focus,
 .main__videotext:hover,
 .main__videotext:focus {
- opacity: 0.5;
+  opacity: 0.5;
 }
 
 .main__videosvg {
-  background-color:inherit;
+  background-color: inherit;
   color: $orange;
 }
 
@@ -117,7 +117,7 @@
   background-repeat: no-repeat;
   width: 24px;
   height: 27px;
-  background-image: url(../img/phonesvg.svg);
+  background-image: url("img/phonesvg.svg");
 }
 
 .main__imagejpg {
@@ -145,7 +145,7 @@
   font-size: 16px;
   line-height: 18px;
   padding-left: 45px;
-  font-family: "MullerMedium";
+  font-family: "MullerMedium", "Arial", sans-serif;
   color: $orange;
   cursor: pointer;
 }
@@ -165,7 +165,7 @@
   background-repeat: no-repeat;
   width: 41px;
   height: 40px;
-  background-image: url(../img/arrowsdown.svg);
+  background-image: url("img/arrowsdown.svg");
 }
 
 .main__start {

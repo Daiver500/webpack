@@ -125,7 +125,7 @@
   background-repeat: no-repeat;
   width: 24px;
   height: 27px;
-  background-image: url(../img/phonesvg.svg);
+  background-image: url("img/phonesvg.svg");
 }
 
 .footer__link-mail::before {
@@ -136,7 +136,7 @@
   background-repeat: no-repeat;
   width: 32px;
   height: 27px;
-  background-image: url(../img/mailsvg.svg);
+  background-image: url("img/mailsvg.svg");
 }
 
 .footer__link-mail:hover,
@@ -170,4 +170,3 @@
     bottom: 0;
   }
 }
-

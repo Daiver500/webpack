@@ -1,25 +1,30 @@
 const path = require("path");
+const miniCss = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: [
     "./js/main.js",
     "./js/modal.js",
     "./js/slider.js",
-    "./js/cardcreate.js",
-    "./js/filters.js",
-    "./js/validation.js",
-    "./js/submit.js",
-    "./js/popup.js",
-    "./js/photoloading.js",
-    "./js/success.js",
-    "./js/mistake.js",
-    "./js/effects.js",
-    "./js/scale.js",
+    "./js/index.js",
   ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname),
     iife: true
   },
+  module: {
+    rules: [
+      { test: /\.(s*)css$/, use: [ miniCss.loader, "css-loader?url=false", "sass-loader" ] },
+      { test: /\.svg$/, use: "svg-inline-loader" },
+    ],
+ },
+ plugins: [
+    new miniCss({
+       filename: "style.css",
+    }),
+ ],
   devtool: false
 };
+
+

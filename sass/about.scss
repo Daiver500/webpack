@@ -16,7 +16,7 @@
 .about__text,
 .about__timetext,
 .about__timedate {
-  font-family: MillerMedium;
+  font-family: "MullerMedium", "Arial", sans-serif;
   margin-top: 0;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .about__itemtitle {
-  font-family: MillerMedium;
+  font-family: "MullerMedium", "Arial", sans-serif;
   margin-top: 0;
   margin-bottom: 12px;
   font-size: 24px;
@@ -152,8 +152,6 @@
     width: 310px;
     top: 75%;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
   }
-
 }
-

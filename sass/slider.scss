@@ -54,7 +54,7 @@
 .slider__title,
 .slider__text {
   margin-top: 0;
-  font-family: MullerMedium;
+  font-family: "MullerMedium", "Arial", sans-serif;
 }
 
 .slider__title {
@@ -101,25 +101,25 @@
 }
 
 .slider__button--left {
-  background-image: url(../img/arrowleft.svg);
+  background-image: url("img/arrowleft.svg");
   background-repeat: no-repeat;
   left: 82%;
 }
 
 .slider__button--right {
-  background-image: url(../img/arrowright.svg);
+  background-image: url("img/arrowright.svg");
   background-repeat: no-repeat;
   left: 90%;
 }
 
 .slider__button--right:hover,
 .slider__button--right:focus {
-  background-image: url(../img/arrowrighthover.svg);
+  background-image: url("img/arrowrighthover.svg");
 }
 
 .slider__button--left:hover,
 .slider__button--left:focus {
-  background-image: url(../img/arrowlefthover.svg);
+  background-image: url("img/arrowlefthover.svg");
 }
 
 @media (max-width: $max-tablet-width) {

@@ -50,7 +50,7 @@
 
 .form__legend {
   text-align: center;
-  font-family: MullerMedium;
+  font-family: "MullerMedium", "Arial", sans-serif;
   font-size: 40px;
   line-height: 50px;
   letter-spacing: -0.2px;
@@ -62,7 +62,7 @@
   position: relative;
   font-size: 16px;
   line-height: 24px;
-  max-width: 280px
+  max-width: 280px;
 }
 
 .form__title::before {
@@ -73,7 +73,7 @@
   background-repeat: no-repeat;
   width: 46px;
   height: 69px;
-  background-image: url(../img/dooricon.svg);
+  background-image: url("img/dooricon.svg");
 }
 
 .form__rules {
@@ -108,10 +108,9 @@
   color: $orange;
 }
 
-
 @media (max-width: $max-tablet-width) {
   .form__inner {
-    max-width:750px;
+    max-width: 750px;
     display: flex;
     justify-content: center;
   }
@@ -145,6 +144,7 @@
     font-size: 18px;
     line-height: 24px;
   }
+
   .form__legend {
     font-size: 24px;
     line-height: 30px;
