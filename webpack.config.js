@@ -2,9 +2,9 @@ const path = require("path");
 
 module.exports = {
   entry: [
-    "./js/server.js",
-    "./js/timeout.js",
-    "./js/huge-picture.js",
+    "./js/main.js",
+    "./js/modal.js",
+    "./js/slider.js",
     "./js/cardcreate.js",
     "./js/filters.js",
     "./js/validation.js",
