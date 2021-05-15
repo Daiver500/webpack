@@ -1,0 +1,272 @@
+
+.main {
+  margin-bottom: 100px;
+}
+
+.main__request {
+  max-width: 40%;
+  padding-top: 48px;
+  position: relative;
+}
+
+.main__request,
+.main__video {
+  max-height: 940px;
+}
+
+.main__header {
+  font-family: "MullerMedium";
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -0.5px;
+}
+
+.main__information {
+  padding-top: 35%;
+}
+
+.main__header,
+.main__text {
+  margin-top: 0;
+}
+
+.main__header {
+  margin-bottom: 27px;
+}
+
+.main__text {
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  max-width: 460px;
+}
+
+.main__inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  height: 100vh;
+}
+
+.main__video {
+  position: relative;
+  max-width: 60%;
+}
+
+.main__videobutton,
+.main__videotext {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__videobutton {
+  width: 254px;
+  height: 254px;
+  background-color:inherit;
+  border-radius: 50%;
+  top: 30%;
+  display: flex;
+  cursor: pointer;
+  border: 0;
+}
+
+.main__videosvg:hover,
+.main__videosvg:focus,
+.main__videotext:hover,
+.main__videotext:focus {
+ opacity: 0.5;
+}
+
+.main__videosvg {
+  background-color:inherit;
+  color: $orange;
+}
+
+.main__link,
+.main__videotext {
+  font-size: 21px;
+}
+
+.main__link:hover,
+.main__link:focus {
+  color: $orange;
+}
+
+.main__videotext {
+  top: 105%;
+  width: 165px;
+  line-height: 25px;
+  color: $orange;
+}
+
+.main__link {
+  position: absolute;
+  top: 40px;
+  right: 10%;
+  color: $black;
+  line-height: 30px;
+}
+
+.main__link::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -2px;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 27px;
+  background-image: url(../img/phonesvg.svg);
+}
+
+.main__imagejpg {
+  height: 100%;
+}
+
+.main__buttons {
+  display: flex;
+}
+
+.main__button {
+  padding: 15px 31px 15px;
+  background-color: $orange;
+  border: none;
+  border-radius: 30px;
+  color: $white;
+  cursor: pointer;
+}
+
+.main__scrollbutton {
+  position: absolute;
+  bottom: 1%;
+  width: 245px;
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 45px;
+  font-family: "MullerMedium";
+  color: $orange;
+  cursor: pointer;
+}
+
+.main__scrollbutton:hover,
+.main__scrollbutton:focus,
+.main__button:hover,
+.main__button:focus {
+  opacity: 0.5;
+}
+
+.main__scrollbutton::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 40px;
+  background-image: url(../img/arrowsdown.svg);
+}
+
+.main__start {
+  margin-bottom: 0;
+  margin-left: 14px;
+  text-align: center;
+}
+
+@media (max-width: $max-tablet-width) {
+  .main__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main__information {
+    padding-top: 5%;
+  }
+
+  .main__request {
+    margin-bottom: 65px;
+  }
+
+  .main__header,
+  .main__text {
+    text-align: center;
+  }
+
+  .main__header {
+    font-size: 54px;
+    line-height: 40px;
+  }
+
+  .main__request,
+  .main__video {
+    max-width: 100%;
+    max-height: 500px;
+  }
+
+  .main__video {
+    max-height: 400px;
+  }
+
+  .main__link,
+  .main__start {
+    display: none;
+  }
+
+  .main__text {
+    font-size: 16px;
+  }
+
+  .main__buttons {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .main__scrollbutton {
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  .main__videobutton,
+  .main__videosvg {
+    width: 150px;
+    height: 150px;
+    top: 23%;
+  }
+
+  .main__videotext {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .main {
+    margin-bottom: 50px;
+  }
+
+  .main__request {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__header {
+    font-size: 34px;
+  }
+
+  .main__scrollbutton {
+    bottom: -18%;
+  }
+
+  .main__videobutton,
+  .main__videosvg {
+    width: 100px;
+    height: 100px;
+  }
+}
+

@@ -1,0 +1,156 @@
+.slider {
+  margin-bottom: 138px;
+}
+
+.slide {
+  padding-right: 200px;
+  position: relative;
+}
+
+.slider__inner {
+  position: relative;
+}
+
+.slider__wrapper {
+  overflow: hidden;
+  //max-width: 750px;
+}
+
+.slider__wrapperinner {
+  display: flex;
+  //overflow: hidden;
+  justify-content: space-around;
+  transition: 0.5s all;
+}
+
+//.slider__imagejpg {
+ // width: 750px;
+  //height: 500px;
+//}
+
+.slider__header {
+  max-width: 950px;
+  position: relative;
+}
+
+.slider__button {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+}
+
+.slider__image {
+  //display: flex;
+  //overflow: hidden;
+  //justify-content: space-around;
+  width: 750px;
+  height: 500px;
+}
+
+.slider__picture {
+  padding-right: 200px;
+}
+
+.slider__title,
+.slider__text {
+  margin-top: 0;
+  font-family: MullerMedium;
+}
+
+.slider__title {
+  margin-bottom: 8px;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.slider__text {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $darkgreen;
+}
+
+.slider__remark {
+  position: absolute;
+  top: 0;
+  left: 93%;
+  transform: translateX(-93%);
+  width: 136px;
+}
+
+.slider__advertisement {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.slider__button {
+  width: 25px;
+  height: 45px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.slider__button--left,
+.slider__button--right {
+  position: absolute;
+  top: 585px;
+  z-index: 1;
+}
+
+.slider__button--left {
+  background-image: url(../img/arrowleft.svg);
+  background-repeat: no-repeat;
+  left: 82%;
+}
+
+.slider__button--right {
+  background-image: url(../img/arrowright.svg);
+  background-repeat: no-repeat;
+  left: 90%;
+}
+
+.slider__button--right:hover,
+.slider__button--right:focus {
+  background-image: url(../img/arrowrighthover.svg);
+}
+
+.slider__button--left:hover,
+.slider__button--left:focus {
+  background-image: url(../img/arrowlefthover.svg);
+}
+
+@media (max-width: $max-tablet-width) {
+  .slider__header {
+    text-align: center;
+  }
+
+  .slider__image {
+    //display: flex;
+    //overflow: hidden;
+    //justify-content: space-around;
+    width: 550px;
+    height: 400px;
+  }
+
+  .slider__button--left,
+  .slider__button--right {
+    top: 475px;
+  }
+
+  .slider__button--left {
+    left: 78%;
+  }
+
+  .slider__button--right {
+    left: 86%;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .slider {
+    display: none;
+  }
+}

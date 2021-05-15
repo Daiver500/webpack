@@ -1,0 +1,166 @@
+.form {
+  margin-bottom: 135px;
+}
+
+.form__inner {
+  max-width: 985px;
+}
+
+.form__main {
+  display: flex;
+}
+
+.form__group {
+  padding: 54px 130px 59px 130px;
+  border: 3px solid $green;
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__inputs input {
+  padding: 18px 5px 18px 25px;
+  width: 500px;
+  font-size: 18px;
+  line-height: 24px;
+  border: 1px solid $black;
+  color: $black;
+}
+
+.form__inputs input:invalid {
+  color: $red;
+}
+
+.form__inputs input:invalid:focus:not(:placeholder-shown) {
+  border: 1px solid $red;
+}
+
+
+.form__name,
+.form__email {
+  margin-bottom: 29px;
+}
+
+.form__phone {
+  margin-bottom: 48px;
+}
+
+.form__legend {
+  text-align: center;
+  font-family: MullerMedium;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.2px;
+}
+
+.form__title {
+  margin-top: 0;
+  margin-bottom: 57px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 280px
+}
+
+.form__title::before {
+  content: "";
+  position: absolute;
+  left: -67px;
+  top: -2px;
+  background-repeat: no-repeat;
+  width: 46px;
+  height: 69px;
+  background-image: url(../img/dooricon.svg);
+}
+
+.form__rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__button {
+  padding: 17px 76px 15px;
+  background-color: $orange;
+  border-radius: 30px;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  margin-bottom: 37px;
+}
+
+.form__button:hover,
+.form__button:focus,
+.form__ruleslink:hover,
+.form__ruleslink:focus {
+  opacity: 0.5;
+}
+
+.form__rulestest {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.form__ruleslink {
+  color: $orange;
+}
+
+
+@media (max-width: $max-tablet-width) {
+  .form__inner {
+    max-width:750px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form__group {
+    padding: 54px 30px 59px 30px;
+  }
+
+  .form__legend {
+    font-size: 30px;
+  }
+
+  .form__title {
+    text-align: center;
+  }
+
+  .form__title::before {
+    left: -40px;
+    top: -2px;
+  }
+}
+
+@media (max-width: $max-mobile-width) {
+  .form__group {
+    padding: 5px 3px 5px 3px;
+  }
+
+  .form__inputs input {
+    padding: 12px 5px 12px 25px;
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .form__legend {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .form__title {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .form__title::before {
+    display: none;
+  }
+}
+
+
+
+
